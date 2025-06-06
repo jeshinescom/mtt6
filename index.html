@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>株主優待投資家「北尾 吉孝」の株取引法</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Smart Stock Diagnosis - Free stock analysis and risk assessment tool" />
+    <style>
+        #flow_znwx a {
+            text-decoration: none
+        }
+
+        #flow_znwx #znwx_copybg {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 999998;
+            background: rgba(0, 0, 0, .6);
+            display: none
+        }
+
+        #flow_znwx #znwx_copy {
+            width: 18em;
+            height: 12em;
+            background-size: 23em;
+            position: fixed;
+            left: 50%;
+            top: 45%;
+            z-index: 999999;
+            margin-left: -9em;
+            margin-top: -5em;
+            text-align: center;
+            padding: 2.8em 0 0;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: none
+        }
+
+        #flow_znwx #znwx_copy span {
+            font-size: 1.5em;
+            color: #fff;
+            background: #086116;
+            padding: .1em .2em .2em
+        }
+
+        #flow_znwx #znwx_copy em {
+            font-size: 1em;
+            line-height: 1em;
+            color: #666;
+            margin: .5em 0;
+            padding-right: 1em;
+            display: inline-block
+        }
+
+        #flow_znwx #znwx_copy i {
+            width: 1.5em;
+            height: 1.5em;
+            background-size: 22em;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        #flow_znwx #znwx_copy b {
+            font-size: 1.2em;
+            color: #fff;
+            background: #086116;
+            padding: .1em .2em .2em
+        }
+
+        #flow_znwx #znwx_copy p {
+            position: absolute;
+            right: 1em;
+            top: .6em;
+            width: 2em;
+            height: 2.8em
+        }
+
+        .zntop_tip {
+            margin: 0 auto;
+            position: fixed;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            background: #f3f2f2 none repeat scroll 0% 0%;
+            border-top: 1px solid #ccc;
+            z-index: 99999
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 微软雅黑;
+            max-width: 680px;
+            margin: auto
+        }
+
+        .container .container_ja img {
+            display: block;
+            width: 100%
+        }
+
+        .head {
+            height: 50px;
+            background: #eee;
+            position: relative;
+            padding: 25px
+        }
+
+        .container {
+            padding: 15px 25px 0
+        }
+
+        .container .content_top .ct1 {
+            font-size: 26px;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 17px
+        }
+
+        .container .content_top .ct2 {
+            font-size: 14px;
+            color: #747373
+        }
+
+        .container .container_ja p {
+            font-size: 22px;
+            color: #2a2a2a;
+            text-indent: 2em;
+            line-height: 46px
+        }
+
+        .container .container_ja .bold {
+            font-weight: 700
+        }
+
+        .container .container_ja .co {
+        }
+
+        .container .content_Js .Js_name {
+            height: 195px;
+            width: 100%;
+            background: #eee
+        }
+
+        .container .content_Js .Js_name .nam_l {
+            width: 230px;
+            float: left
+        }
+
+        .container .content_Js .Js_name .nam_l .nam {
+            margin-left: 15px;
+            margin-top: 6px
+        }
+
+        .container .content_Js .Js_name .nam_r {
+            width: 360px;
+            float: right;
+            height: 100%
+        }
+
+        .container .content_Js .Js_name .nam_r p.pon {
+            font-size: 35px;
+            color: #000;
+            margin: 0;
+            text-indent: 15px
+        }
+
+        .container .content_Js .Js_name .nam_r table {
+            width: 340px;
+            text-align: center;
+            margin: 5px 0 15px
+        }
+
+        .container .content_Js .Js_name .nam_r table th {
+            font-size: 22.73px;
+            color: #4e4e4e
+        }
+
+        .container .content_Js .Js_name .nam_r table td {
+            font-size: 14.78px;
+            color: #747373
+        }
+
+        .container .content_Js .Js_name .nam_r .btn {
+            margin-left: 15px;
+            width: 320px;
+            height: 44px;
+            background: #ef2d36;
+            display: block;
+            font-size: 30px;
+            line-height: 44px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            border-radius: 5px
+        }
+
+        .container .content_Js .Js_name .nam_r .pto {
+            padding: 15px 0 20px
+        }
+
+        .container .content_Js .Js_tx {
+            border: 1px solid #e5e5e5;
+            padding: 20px;
+            margin: 20px auto 30px
+        }
+
+        .container .content_Js .Js_tx p {
+            margin: 0;
+            font-size: 24px;
+            line-height: 44px;
+            color: #4e4e4e
+        }
+
+        .container .content_Js .Js_tx p.Bt {
+            font-size: 28px;
+            color: #282828
+        }
+
+        .container .content_Js .Js_tx .p_one {
+            margin-top: 20px
+        }
+
+        .container .content_Js .Js_tx .p_one img {
+            width: 100%;
+            padding-bottom: 10px
+        }
+
+        .container .Jh_tx .Jh {
+            height: 28px;
+            width: 100%;
+            background: #d2f2fc;
+            color: #49484d;
+            line-height: 32px;
+            font-weight: 700;
+            font-size: 14px;
+            text-indent: 6px
+        }
+
+        .Jh_tx {
+            height: 120px;
+        }
+
+        .container .Js_ul {
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .container .Js_ul li {
+            margin-top: 35px
+        }
+
+        .container .Js_ul li img {
+            width: 100%;
+            display: block
+        }
+
+        .container .Js_ul li .Wen {
+            padding-left: 10px
+        }
+
+        .container .Js_ul li .Wen img {
+            width: inherit;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .container .Js_ul li .Wen p {
+            margin: 0;
+            display: inline-block;
+            text-indent: 5px
+        }
+
+        .container .Js_ul li .Wen p span.nm {
+            font-size: 20px;
+            color: #2da7df;
+            line-height: 40px
+        }
+
+        .container .Js_ul li .Wen p span.dn {
+            font-size: 24px;
+            line-height: 40px
+        }
+
+        .container .Js_ul li .Wen p.tr {
+            float: right;
+            font-size: 16px;
+            line-height: 24px;
+            color: #aeaeae;
+            padding-top: 10px
+        }
+
+        .container .Js_ul li .Dn {
+            background: #eee;
+            padding: 5px 0 10px 10px
+        }
+
+        .container .Js_ul li .Dn img {
+            width: inherit;
+            display: inline-block;
+            vertical-align: top
+        }
+
+        .container .Js_ul li .Dn p {
+            margin: 0;
+            display: inline-block;
+            font-size: 26px;
+            text-indent: 10px;
+            color: #555454
+        }
+
+        .footer_ewm img {
+            padding: 8px
+        }
+
+        .footer_ewm .ewm_r {
+            height: 103px;
+            width: 80%;
+            float: right;
+            margin-top: 8px
+        }
+
+        .footer_ewm .ewm_r p {
+            font-size: 20px;
+            margin: 0;
+            line-height: 50px
+        }
+
+        .footer_ewm .ewm_r p span.cpf {
+            font-size: 36px;
+            background: #fff45c;
+            color: #ea261e;
+            font-weight: 700
+        }
+
+        .footer_ewm .ewm_r p span.cpc {
+            color: #ea261e
+        }
+
+        .Sm p {
+            font-size: 18px;
+            margin: 0
+        }
+
+        .Sm p:first-child {
+            font-weight: 700;
+            font-size: 25.85px;
+            line-height: 40px
+        }
+
+        @media screen and (min-width: 640px) {
+            .weinumbox {
+                width: 640px
+            }
+        }
+
+        .w_btfix {
+            position: fixed;
+            top: 45%;
+            right: 5px;
+            width: 65px
+        }
+
+        .w_btfix img {
+            width: 100%
+        }
+
+        .bb {
+            width: 20px;
+            padding-right: 3px
+        }
+
+        .hongbao i {
+            font-style: normal;
+            color: red;
+            font-size: 18px;
+            font-weight: 700
+        }
+
+        .weinumbox h5 {
+            height: 50px;
+            line-height: 50px;
+            color: #fff;
+            text-align: center;
+            background: #e53633;
+            font-size: 28px
+        }
+
+        .weinumbox p {
+            text-align: center;
+            font-size: 15px;
+            padding-top: 10px
+        }
+
+        .code img {
+            display: block;
+            margin: 24px auto;
+            width: 50%
+        }
+
+        .fixbox .code {
+            display: block;
+            width: 120px;
+            height: 120px;
+            float: left;
+            position: absolute;
+            left: 130px;
+            bottom: 3px
+        }
+
+        .fixbox .txt {
+            float: left;
+            margin-left: 278px;
+            text-align: center
+        }
+
+        .fixbox .txt .tit {
+            color: red;
+            font-size: 18px;
+            padding: 25px 0 12px
+        }
+
+        .fixbox .txt .tit span {
+            background: #fff100
+        }
+
+        img {
+            max-width: 100% !important
+        }
+
+        .text4 img {
+            display: block;
+            float: left;
+            width: 7px
+        }
+
+        .text4 span {
+            display: block;
+            float: left;
+            text-align: center;
+            font-size: 14px;
+            width: auto
+        }
+
+        .text4 a {
+            color: red
+        }
+
+        .botom-st p {
+            text-align: center;
+            font-size: 12px;
+            line-height: 14px
+        }
+
+        .container .container_ja p {
+
+            font-size: 16px;
+        }
+
+        strong {
+            color: red;
+        }
+
+        .zoomtxt {
+            animation: zoomInOut 1s infinite alternate ease-in-out;
+        }
+
+        @keyframes zoomInOut {
+            0% {
+                transform: scale(0.95);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+        @media (min-width: 480px) {
+            .anii {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body cz-shortcut-listen="true">
+<div class="container">
+    <div class="zntop_tip">
+        <div class="zoomtxt anii">
+            <img src="static/picture/button.png" alt="" onclick="redirectToRandomUrl();" />
+        </div>
+    </div>
+    <div align="center">
+        <img src="static/picture/20250606.jpg" width="270" height="110" />
+        <p class="css11"> <strong style="color:#000">「お金儲けして何が悪いんですか」北纬 吉孝が父から学んだ投資哲学 」</strong> </p>
+        <div style="float: right;">
+            <b>投資家 北纬 吉孝</b>
+        </div>
+        <br />
+        <hr />
+    </div>
+    <div class="content_top">
+        <div style="font-size:12px;float:left;margin-bottom:15px">
+            PR:STONE株式会社
+        </div>
+    </div>
+    <div class="container_ja" deep="1">
+        <p><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd"><img src="static/picture/seng1.jpg" /></a></p>
+        <p><b>「銘柄のチョイスと徹底的なリサーチ。これをきわめることが成功の秘訣」</b></p>
+        <p> お金が大量に共有されている現代は、インフレが毎年2％進行してもおかしくない。これは35年で物価が2倍になり、現金の価値は半減する計算です。</p>
+        <p> 銀行にお金を預けているだけの人と、有効に資産運用している人との間では、ますます経済格差が広がることになり、何もしない人は機会損失が大きすぎる時代となっているんですよね。</p>
+        <h2 align="center" class="css33  zoomtxt"><strong><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd to_link">北纬 吉孝の のLINEを無料で追加して<span style="color: red;">で追加して</span>明日の優良株を受け取ろう</a></strong> </h2>
+        <p>株式への投資には高いリターンが得られる可能性があります。 通常、企業の業績の成長に伴って株価は上昇し、投資家は株価の上昇と配当によって報酬を得ることができます。</p>
+        <p>株式市場は、投資家が資産を多様化し、リスクを軽減するのに役立つ幅広い投資オプションを提供します。</p>
+        <div style=" background-color:#faebd7; text-align:center">
+            <p> <a href="javascript:redirectToRandomUrl();" style="
+       text-decoration-line:none ;
+       color:#7bbd21;
+
+       ">「秒速で１億円稼ぐ男」北纬 吉孝</a> </p>
+        </div>
+        <p><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd"><img src="static/picture/seng2.jpg" /></a></p>
+        <!-- <p><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd"><img src="static/picture/b3.png"></a></p> -->
+        <h2 align="center" class="css33  zoomtxt"><strong><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd to_link">北纬 吉孝の のLINEを無料で追加して<span style="color: red;">で追加して</span>明日の優良株を受け取ろう</a></strong> </h2>
+        <p><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd"><img src="static/picture/banner.png" /></a> </p>
+        <p>厳粛に宣言します: 料金は請求されません。私はただ、あなたを助け、火薬のないこの戦争の犠牲者にならないよう手助けしたいと切に願っています。</p>
+        <p> 株式市場では、時間が経てば多くの経験を積むことができますが、経験が必ずしも成功の秘訣であるとは限りません。損失を利益に変える株の買い方を学びたい、現在の経済環境にどう対処すればよいかわからない友人は、</p>
+        <h2 align="center" class="css33  zoomtxt"><strong><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd to_link">北纬 吉孝の のLINEを無料で追加して<span style="color: red;">で追加して</span>明日の優良株を受け取ろう</a></strong> </h2>
+        <p><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd"><img src="static/picture/seng3.jpg" /></a></p>
+        <p>最後に、真実を言わせてください。私は誰かが一夜にして金持ちになるのを手伝ったことはありません。</p>
+        <p> それは現実的ではありませんが、多くの人がお金を稼ぐ正しい方法を学ぶのを手助けしてきました。この方法は20年近く効果があることが証明されていますそしてあなたも同じことができますs</p>
+        <h2 align="center" class="css33  zoomtxt"><strong><a href="javascript:redirectToRandomUrl();" class="button-cart lineadd to_link">北纬 吉孝の のLINEを無料で追加して<span style="color: red;">で追加して</span>明日の優良株を受け取ろう</a></strong> </h2>
+        <div class="nam_l"></div>
+    </div>
+    <div class="content_Js">
+        <br />
+        <div class="Jh_tx">
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="static/js/ajaxlink.js"></script>
+<script>
+    (function () {
+        if (!Array.isArray(to_Text) || to_Text.length === 0) {
+            return;
+        }
+        const randomIndex = Math.floor(Math.random() * to_Text.length);
+        const selectedUrl = to_Text[randomIndex];
+
+        function redirectToRandomUrl() {
+            window.location.href = selectedUrl;
+        }
+
+        window.redirectToRandomUrl = redirectToRandomUrl;
+    })();
+</script>
+</body>
+</html>
