@@ -1,1 +1,0 @@
-var to_Text = ['https://line.me/ti/p/wo.65287@works-310048']
